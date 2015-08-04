@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>index</title>
+		<meta name="description" content="">
+		<meta name="author" content="Admin">
+		
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+		<!-- connecting custom styles -->
+		<link rel="stylesheet" type="text/css" href="content/style.css">
+		
+		<!-- connecting bootstrap -->
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+		<!-- connecting jquery -->
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<!-- connecting angular -->
+		<script src="bower_components/angular/angular.js"></script>
+		<!--Connecting angular route-->
+		<script src="bower_components/angular-route/angular-route.js"></script>
+		<!-- connecting angular animate -->
+		<script src="bower_components/angular-animate/angular-animate.js"></script>
+		<script src="bower_components/angular-touch/angular-touch.js"></script>
+		<!-- connectin app module  -->
+		<script src="scripts/app.js"></script>
+		<!-- coonectin controllers file -->
+		<script src="scripts/controllers.js"></script>
+		<!-- connecting angular touch -->
+		
+	</head>
+
+	<body>
+		<div class="container" ng-controller='menuCtrl'>
+			<!-- menu -->
+			<div class="navbar navbar-default">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle colapse" data-toggle="collapse">
+						<span class="sr-only">Tolggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">Angular Mini Project</a>
+				</div>
+				
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#/app">Form Validate</a></li>
+						<li><a href="#/phonelist">Phone list</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			
+			<div ng-view class="view-frame"></div>
+		
+		<!-- footer -->
+		<div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+			<div class="container">
+			<div class="navbar-text pull-left">
+				copy.....
+			</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+<div class="container jumbotron">
+	<img ng-src="{{mainImg}}" class="img-rounded pull-left mar10">
+
+
+	<h1 class="text-center">{{phone.name}}</h1>
+	<h3 class="text-justify">{{phone.description}}</h3>
+	<div class='clr'></div>
+	<div class="container">
+	<h3>GALLERY</h3>
+	<div class="panel panel-primary" >
+		<div class="panel-body">
+			<span  ng-repeat="photo in phone.images">
+				<img ng-src="{{photo}}" class="thumb pull-left" ng-click="setImage(photo)">
+			</span>
+		</div>
+</div>
+</div>
+</div>

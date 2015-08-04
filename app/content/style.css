@@ -1,0 +1,25 @@
+body{
+	background-color: #000 !important;
+}
+.mainImg{
+	width: 200px;
+	margin: 20px;
+	border-radius: 10px;
+}
+.phoneName{
+	margin-top: 45px;
+}
+.clr{
+	clear: both;
+}
+.mar10{
+	margin:10px;
+}
+
+.thumb{
+	width: 150px;
+	margin-right: 10px;
+}
+.thumb:hover{
+	cursor: pointer;
+}
